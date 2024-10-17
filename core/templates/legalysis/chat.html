@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main-page-right %}
+<section class="main-page-right" id="chat-id">
+
+    <div class="chat-setting">
+        <div class="previous-chat top">
+            <p class="user">Here, is question chat</p>
+            <p class="robot">This is answer </p>
+            <p class="user">Here, is question chat</p>
+            <p class="robot">This is answer </p>
+            <p class="user">Here, is question chat</p>
+            <p class="robot">This is answer </p>
+        </div>
+        <form action="" method="POST" class="chatbox bottom">
+            {% csrf_token %}
+            <label for="prompt" id="prompt"></label>
+            <textarea class="prompt" name="prompt" placeholder="Ask your Query"></textarea>
+            <button class="btn" type="submit">Ask</button>
+        </form>
+    </div>
+
+</section>
+    {% endblock %}

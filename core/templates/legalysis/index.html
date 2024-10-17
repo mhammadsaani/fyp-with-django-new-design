@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main-page-right %}
+<section class="main-page-right">
+
+        <div class="features-grid">
+            <div class="feature-items">
+                <img src="{% static 'images/features/pdf.png' %}" alt="">
+                <p>Verify If your document is Non-Disclosure Document</p>
+            </div>
+            <div class="feature-items">
+                <img src="{% static 'images/features/clauses.png' %}" alt="">
+                <p>Extract main clauses</p>
+            </div>
+            <div class="feature-items">
+                <img src="{% static 'images/features/summary.png' %}" alt="">
+                <p>Get document summary</p>
+            </div>
+            <div class="feature-items">
+                <img src="{% static 'images/features/entity.png' %}" alt="">
+                <p>Identify main entities</p>
+            </div>
+
+            <div class="document-input feature-items">
+                <form action="" method="POST"  enctype="multipart/form-data" novalidate>
+                    {% csrf_token %}
+                    <div>
+                        {{ form }}
+                    </div>
+                    <button class="btn" type="submit">Upload</button>
+             </form>
+            </div>
+        </div>
+        </section>  
+{% endblock %}

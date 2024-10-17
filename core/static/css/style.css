@@ -1,0 +1,152 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.logo-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.logo-title img{
+    margin-right: 10px;
+}
+
+.menu{
+    padding: 20px;
+}
+
+.main-container{
+    display: flex;
+    background-color: #141718;
+
+}
+
+.main-page-left{
+    width: 20%;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.menu-item{
+    display: flex;
+    align-items: center;
+}
+
+
+.menu-img{
+    margin-right: 20px;
+}
+
+
+.main-page-right{
+    width: 80%;
+    background-color: #F0EED5;
+    margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-page-right .form-div{
+    display: flex;
+    justify-items: end;
+}
+
+.features-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 4px;
+    
+}
+
+
+.feature-items{
+    background-color: #141718;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.feature-items img{
+    margin-right: 10px;
+}
+
+.document-input{
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.btn{
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #858c8e;
+    background-color: white;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.errorlist{
+    color: red;
+}
+
+
+/* 
+FORM STYLING FOR INPUT
+*/
+
+#chat-id{
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-setting{
+    display: block;
+    width: 80%;
+}
+
+.chatbox{
+    width: 100%;
+    background-color: #858c8e;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.chatbox textarea{
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+}
+
+
+a, a:link, a:focus, a:visited {
+    text-decoration: none; 
+    color: inherit;
+    color: hsl(240, 40%, 50%);
+}
+
+
+
+
